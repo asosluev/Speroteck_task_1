@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adding a user</title>
+    <meta charset="utf-8" />
+    
+    <style>.field{width:180px;}
+        body{
+            background-color: rgb(127, 223, 223);
+        }
+        .serch{
+            width:180px;
+             background-color: rgb(209, 141, 141);
+
+       }
+       h1,h2{
+        text-align: center;
+       }
+ 
+    </style>
+</head>
+<body>
+    <h1>Adding a user</h1>
+     <form method="POST">
+        <label>Name</label><br>
+        <input name="name" class="field"/><br><br>
+         <label>Surname</label><br>
+        <input name="surname" class="field"/><br><br>
+        <label>Age</label><br>
+        <input name="age" type="number" class="field" min="1" max="110" /><br><br>
+        <label>E-mail</label><br>
+        <input name="email" class="field"/><br><br>
+        <input type="submit" value="Enter" /><br><br>
+    </form>
+        <h2>
+         Search E-mail
+        </h2>
+    <form  method="POST">
+        <label>Search E-mail</label><br>
+        <input name="serchEmail" class="serch"/><br><br>
+         <input type="submit" value="Serch" /><br><br>
+    </form>
+     <a href="/create">Back to user list</a>
+
+</body>
+<html>
+    

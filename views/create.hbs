@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>user list</title>
+    <meta charset="utf-8" />
+    <style> body{
+            background-color: rgb(127, 223, 162);
+        }
+        h1{
+        text-align: center;
+       }
+ </style>
+</head>
+<body>
+    <h1>User list</h1>
+    <p><a href="/">Add user</a></p>
+    <table>
+        <tr><th>Name</th><th>Age</th><th>Email</th></tr>
+        {{#each users}}
+            <tr>
+                <td>{{this.name}}</td>
+                <td>{{this.surname}}</td>
+                <td>{{this.email}}</td>
+                
+            </tr>
+        {{/each}}
+    </table>
+</body>
+<html>
