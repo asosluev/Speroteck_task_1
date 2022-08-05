@@ -27,10 +27,11 @@ app.get("/create", function (req, res) {
   });
 });
 
-// возвращаем форму для добавления данных
+// Task_1
 app.get("/", function (req, res) {
   res.render("task.hbs");
 });
+// возвращаем форму для добавления данных
 app.get("/index", function (req, res) {
   res.render("index.hbs");
 });
@@ -81,5 +82,5 @@ app.post("/index", urlencodedParser, function (req, res) {
 });
 
 app.listen(port, host, function () {
-  console.log(`server start... http://${host}:${port}`);
+  console.log(`Server start... http://${host}:${port}`);
 });
